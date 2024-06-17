@@ -1,0 +1,259 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+*, *:before, *:after{
+    box-sizing: border-box;
+    /* outline: 1px solid #000; */
+    
+  }
+  
+
+.wrap{
+    width: 1024px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 944px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.header ul{
+    display: flex;
+    align-items: center;
+
+}
+
+.header li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    width: 32px;
+}
+
+.header a{
+    text-decoration: none;
+    color: #3F5D45;
+    font-family: PingFangTC-Semibold, sans-serif;   
+}
+
+.header a:hover{
+    color: #788D7C;
+}
+
+.logo{
+    width: 211px;
+}
+
+.banner img{
+    width: 944px;
+    margin-bottom: 60px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .menu{
+    text-align: center;
+    width: 300px;
+
+}
+
+.menu h3{
+    background: #3F5D45;
+    color: #EAF0ED;
+    font-size: 24px;
+    font-family: PingFangTC-Semibold, sans-serif;   
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+}
+
+.menu a{
+    color: #3F5D45; 
+    font-size: 24px;
+    font-family: PingFangTC-Semibold, sans-serif;  
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu a:hover{
+    background: #EAF0ED;
+}
+
+.productItem ul{
+    width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+.productItem li{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.productItem img{
+    display: block;
+}
+
+.favoriteImg{
+    position: absolute;
+    top: 20px;
+    right: 18.5px
+
+}
+
+.todaySelection{
+    position: absolute;
+    left: 20px;
+    top: 0px;
+    font-family: PingFangTC-Semibold, sans-serif;
+    background: #3F5D45;
+    color: #EAF0ED;
+    writing-mode: vertical-lr;
+    padding: 10px;
+}
+
+.itemPrice{
+    display: flex;
+    text-align: center;
+    width: 300px;
+    border: 1px solid #EAF0ED;
+}
+
+.itemPrice h3{
+    font-size: 20px;
+    width: 173px;
+    font-family: PingFangTC-Light, sans-serif;
+    color: #3F5D45;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.itemPrice span{
+    width: 127px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 20px;
+    font-family: PingFangTC-Semibold, sans-serif;
+    color: #3F5D45;
+    border-left: 1px solid #EAF0ED;
+}
+
+.productItem a{
+    display: block;
+    text-decoration: none;
+    padding: 16px 90px;
+    font-size: 24px;
+    font-family: PingFangTC-Semibold, sans-serif;
+    background: #EAF0ED;
+    color: #3F5D45;
+    width: 300px;
+}
+
+.productItem a:hover{
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+
+.footer{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer a{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer span{
+    display: block;
+    padding: 24px 24px;
+    font-size: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.footer .defaultStartNum{
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+
+.footer .Options{
+    background: #fff;
+    color: #3F5D45;
+}
+
+.footer .Options:hover{
+    background: #EAF0ED;
+    color: #3F5D45;
+}
+
+.footer img{
+    padding: 18px;
+}
